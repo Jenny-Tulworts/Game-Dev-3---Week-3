@@ -20,7 +20,7 @@ namespace GameDevWithMarco.Player
 
         private IEnumerator ShakeTheArrowOnCreation()
         {
-            if (spriteRenderer == null)
+            if (spriteRenderer != null)
             {
                 spriteRenderer.transform.DOShakeScale(arrowShakeTime, arrowShakeStrength);
                 yield return new WaitForSeconds(arrowShakeTime);
@@ -30,18 +30,10 @@ namespace GameDevWithMarco.Player
 
         private IEnumerator FadeThenDestroyLogic()
         {
-            if (spriteRenderer != null)
-            {
-                spriteRenderer.DOFade(0, arrowShakeStrength);
-                yield return new WaitForSeconds(arrowFadeTime);
-                Destroy(gameObject);
-            }
+            spriteRenderer.DOFade(0, arrowFadeTime);
+            yield return new WaitForSeconds(arrowFadeTime);
+            Destroy(gameObject);
         }
 
-        // Update is called once per frame
-        void Update()
-        {
-        
-        }
     }
 }

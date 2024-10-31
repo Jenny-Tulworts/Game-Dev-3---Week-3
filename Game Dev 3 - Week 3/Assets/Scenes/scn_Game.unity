@@ -38,6 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -15531,6 +15532,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &449652255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 449652240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a9130df24f055345a1ef80875372a8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player_Health: {fileID: 1346700575}
+  damage: 2
 --- !u!1001 &451347000
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15598,6 +15613,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3569944148306816916, guid: 69da441eb11e7844ca57cfaf0936a512, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1696469234}
+    - targetCorrespondingSourceObject: {fileID: 3569944148306816916, guid: 69da441eb11e7844ca57cfaf0936a512, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1696469241}
   m_SourcePrefab: {fileID: 100100000, guid: 69da441eb11e7844ca57cfaf0936a512, type: 3}
 --- !u!1 &519420028
 GameObject:
@@ -21153,6 +21171,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1096026575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1096026560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a9130df24f055345a1ef80875372a8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player_Health: {fileID: 1346700575}
+  damage: 2
 --- !u!1 &1164025313
 GameObject:
   m_ObjectHideFlags: 0
@@ -28801,6 +28833,7 @@ GameObject:
   - component: {fileID: 1346700572}
   - component: {fileID: 1346700573}
   - component: {fileID: 1346700574}
+  - component: {fileID: 1346700575}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -28945,6 +28978,20 @@ MonoBehaviour:
   tipOfTheCrossbow: {fileID: 1231796293}
   projectileForce: 1000
   crossbowSprites: {fileID: 1164025313}
+--- !u!114 &1346700575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346700568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b428f1ec42964e044a5aed4e6a27435e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
+  maxHealth: 10
 --- !u!1001 &1427394429
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29012,6 +29059,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3569944148306816916, guid: 69da441eb11e7844ca57cfaf0936a512, type: 3}
       insertIndex: -1
       addedObject: {fileID: 449652248}
+    - targetCorrespondingSourceObject: {fileID: 3569944148306816916, guid: 69da441eb11e7844ca57cfaf0936a512, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 449652255}
   m_SourcePrefab: {fileID: 100100000, guid: 69da441eb11e7844ca57cfaf0936a512, type: 3}
 --- !u!1 &1696469226 stripped
 GameObject:
@@ -29050,6 +29100,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1696469241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696469226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a9130df24f055345a1ef80875372a8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player_Health: {fileID: 1346700575}
+  damage: 2
 --- !u!1 &1708252191
 GameObject:
   m_ObjectHideFlags: 0
@@ -29473,6 +29537,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3569944148306816916, guid: 69da441eb11e7844ca57cfaf0936a512, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1096026568}
+    - targetCorrespondingSourceObject: {fileID: 3569944148306816916, guid: 69da441eb11e7844ca57cfaf0936a512, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1096026575}
   m_SourcePrefab: {fileID: 100100000, guid: 69da441eb11e7844ca57cfaf0936a512, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
